@@ -1,11 +1,25 @@
-# 2022-P2-ShapesPOO
-Clases y herencias de formas geometricas.
-Aplicación de conceptos de POO
+# 2022-P2-POO
 
-Codigo origen:
-https://gist.github.com/fdegiovanni/11e55159c93f86c07f8b54dd4fe15b97
+Clase JUGADOR
+* Propiedades
+  * estaVivo
+  * vida
+  * tiempo (tiempo de vida)
+  * Armas[]
+* Métodos
+  * recolectarArma(ARMA)
+  * atacar(ENEMIGO, ARMA)
+  * evento recursivo que descuente tiempo
 
-Aclaración: ¿Qué es un Gist en GitHub y para qué sirve?
-* https://docs.github.com/es/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists
-* Un gist es una forma que se tiene para poder compartir código usando GitHub.
-Cuando tenemos un código que no es lo suficientemente grande para crear un repositorio, entonces creamos un gist. Aunque gist funciona básicamente cómo un repositorio, ya que se le puede hacer un fork o clonarlo. Así mismo se puede editar y las personas pueden comentar el gist.
+Clase ENEMIGO
+* Propiedades
+  * vida
+  * poder
+* Métodos
+  * atacar(JUGADOR)
+
+Clase ARMA
+* Propiedades
+  * poder
+  * esManual [si o no]
+  * balas (si es manual no aplica / cartuchos ? / Dividir clase ?) 
